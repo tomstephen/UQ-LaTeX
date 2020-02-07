@@ -1,0 +1,107 @@
+% For the CSSE2010 Course
+
+\documentclass{article}
+\usepackage[margin=0.7in]{geometry}
+
+\usepackage{circuitikz}
+
+\usepackage{xcolor}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amssymb}
+
+\newtheorem{example}{Example}
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}
+
+\title{CSSE2010 Notes}
+\author{Ismael Khan}
+
+\pagecolor{black}
+\color{white}
+
+\usepackage{listings}
+\usepackage{color}
+
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+
+\lstset{frame=tb,
+  language=C,
+  aboveskip=3mm,
+  belowskip=3mm,
+  showstringspaces=false,
+  columns=flexible,
+  basicstyle={\small\ttfamily},
+  numbers=none,
+  numberstyle=\tiny\color{gray},
+  keywordstyle=\color{blue},
+  commentstyle=\color{dkgreen},
+  stringstyle=\color{mauve},
+  breaklines=true,
+  breakatwhitespace=true,
+  tabsize=3
+}
+
+\begin{document}
+\section{Lecture 1 - Course Introduction/Bits and Bytes}
+\section{Lecture 2- Logic Gates}
+\section{Lecture 3 - Binary Arithemetic}
+\section{Lecture 4 - Combinational Logic}
+\section{Lecture 5 - Flip Flops}
+\subsection{Clicker Question}
+Consider a multiplexer shown, what must the inpust A,B,C,D be so that the
+multiplexer output is 
+$$ X = S_1\cdot S_0 + \bar{S_1} \cdot G $$
+\subsection{Circuits that remember values}
+The output of any logic gate or combinational circuit is dependent on the
+inputs. If an input changes, the output can also change. The previous value is
+lost forever.
+
+\subsection{Memory Element: D Flip Flop}
+\begin{itemize}
+  \item D is input
+  \item Q is output
+  \item CLK (clock) is control input.
+\end{itemize}
+How does it work? Q copies the value of D (remembers it) whenever CLK goes from
+0 to 1 (rising edge).
+\subsection{Characteristic Tables}
+Characteristic table defines operation of flip-flop in tabular form.a
+
+\subsection{D Flip-flops}
+\begin{definition}
+  A $ n $ bit \textbf{register} can be made using $ n $ D flip-flops.
+\end{definition}
+\subsection{Latches from NAND gates}
+\begin{circuitikz}[background rectangle/.style={fill=black}, color=white,help lines/.style={color=lightgray,line width=0.2pt}] \draw
+(0,2) node[nand port] (1) {}
+(0,0) node[nand port] (2) {}
+
+\end{circuitikz}
+\subsection{Flip-Flops vs Latches}
+Any devices based on edges are referred to as flip flops, these are
+edge-triggered devices.\\\\
+Triangle indicates edge-triggered (therefore flip-flop)
+% Need to figure out how to input the schematics of the circuits
+
+State of the flip flop is the value stored. Flip-flops are more useful than
+latches.
+\begin{center}
+\begin{circuitikz}[background rectangle/.style={fill=black},
+  color=white,help lines/.style={color=lightgray,line width=0.2pt}] \draw
+(0,2) node[and port] (myand1) {}
+(0,0) node[and port] (myand2) {}
+(2,1) node[xnor port] (myxnor) {}
+(3,1) node[not port] (mynot) {}
+(myand1.out) -- (myxnor.in 1)
+(myand2.out) -- (myxnor.in 2)
+(myxnor.out) -- (mynot.in);
+\end{circuitikz}
+\end{center}
+\section{Lecture 6 - Sequential Circuits (Shift Registers)}
+
+\end{document}
+
+

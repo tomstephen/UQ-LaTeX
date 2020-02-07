@@ -1,0 +1,261 @@
+\documentclass{article}
+\usepackage[margin=0.7in]{geometry}
+
+\usepackage{xcolor}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amssymb}
+\usepackage{listings}
+
+\title{CSSE2002 Course Notes}
+\author{Ismael Khan}
+\date{}
+
+\pagecolor{black}
+\color{white}
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}{Lemma}
+
+\theoremstyle{remark}
+\newtheorem{remark}{Remark}
+
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}[section]
+\newtheorem{example}{Example}
+
+\usepackage{color}
+
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+
+\lstset{frame=tb,
+  language=C,
+  aboveskip=3mm,
+  belowskip=3mm,
+  showstringspaces=false,
+  columns=flexible,
+  basicstyle={\small\ttfamily},
+  numbers=none,
+  numberstyle=\tiny\color{gray},
+  keywordstyle=\color{blue},
+  commentstyle=\color{dkgreen},
+  stringstyle=\color{mauve},
+  breaklines=true,
+  breakatwhitespace=true,
+  tabsize=3
+}
+
+\begin{document}
+\maketitle
+\section*{Javadoc}
+
+\begin{lstlisting}
+/* *
+* Do a thing
+* @param s Name of species
+* @param f Fraction of Avagadro's Number
+* @return Time required(in microseconds)
+*/
+
+public long doThing(String s, float f)
+\end{lstlisting}
+Javadoc comments must
+\begin{itemize}
+  \item Begin with /**
+  \item End with */
+  \item Must be immediately above the thing being commented
+  \item Use tags @
+  \item Some tags take params, some just text.
+\end{itemize}
+\subsection*{Procedural Abstraction}
+Procedural abstraction makes programs easier to read and mantain by keeping
+the size and complexity of methods small.
+\subsubsection*{Guidelines}
+\begin{itemize}
+  \item Methods should be decomposed according to functionality not lines of
+    code.
+  \item Each method should perform one task (can be an aggregate task)
+  \item Be suspicious of
+    \begin{itemize}
+      \item Methods that are hard to name
+      \item Repeated code
+      \item Any method which is overly long or complex.
+      \item Conditional statements on the types of method arguements
+    \end{itemize}
+\end{itemize}
+Ideally specification
+\begin{itemize}
+\item Allow the implementation of a method to be read/written without
+needing to look at the implementations of other methods.
+\item Allow a method to be re-implemented without changes any dependant
+methods.
+\item Should \begin{itemize}
+\item Rule out all implementations that are unnacceptable (i.e be
+suffieciently restrictive).
+\item Not prelude acceptable implentations
+\item Be easy for programmers to understand
+\item Draw attention to possible consequences of implementation decisions.
+(Eg if it may affect performance)
+\end{itemize}
+\end{itemize}
+Attempt to keep out incorrect implementations, for instance
+\begin{lstlisting}
+/** Return an index (i) of ar such that
+  * ar[i] == x, if any
+  */
+
+public int search(int[] ar, int x)
+\end{lstlisting}
+What happens if $ x $ is not in ar? Don't assume and be clear in the
+documentation.\\
+Better:
+\begin{lstlisting}
+/** Return an index (i) of ar such that 
+  * ar[i] == x, if any
+  * else, return -1
+  */
+\end{lstlisting}
+However don't be overly restrictive and tell readers how you wrote some method.
+\begin{lstlisting}
+/** Calculate the square root of a number within
+  * a given error
+  * @param sq Number whose squareroot is to be found
+  * @param e The allowable error
+  * @return rt such that 0 <= (rt*rt - sq) <= se
+  */
+public double sqrt(double sq, double e)
+\end{lstlisting}
+
+\subsection*{Formality}
+Specifications of software range in formality
+\begin{itemize}
+  \item Informal - eg. normal comments
+  \item Semiformal - structured English documentation using Javadoc tags.
+  \item Formal - mathematical constraints using Java Syntax for boolean
+    expressions.
+\end{itemize}
+
+\subsubsection*{Informal Specifications}
+\begin{lstlisting}
+/** Withdraw an amount from this account and 
+  * return how much is left
+  */
+pulbic int withdraw(int amount)
+\end{lstlisting}
+What happens when 
+\begin{itemize}
+  \item amount is negative?
+  \item amount is bigger than balance?
+\end{itemize}
+Is the balance changes when there is a failure?
+\subsubsection*{Semi-formal specifications}
+\begin{lstlisting}
+/** Withdraw an amount from this account.
+  * @param amount The amount to withdraw
+  * @return Balance of this account after successful withdrawal
+  */
+public int withdraw(int amount)
+\end{lstlisting}
+Clearer but the same questions still apply.
+\subsection*{Contracts}
+Formal specifications of code can be written using contracts. If tthe program
+calling the method satisfies the precondition, then
+the method guarantees to satisfy the post condition (watch out for Exceptions here). If the code calling method does not satisfy the precondition then the
+method guarantees nothing. This still does not make the questions go away.
+
+\subsubsection*{Formal specifications}
+\begin{lstlisting}
+/** Withdraw an amount from this account.
+  * @require amount >= 0 && amount <= getBalance()
+  * @ensure getBalance() == \old(getBalance()) - amount && \result ==
+  getBalance()
+  */
+public int withdraw(int amount)
+\end{lstlisting}
+Document using: \\
+javadoc -tag require -tag ensure Thing.java. IntelliJ $ \rightarrow $ pracs.
+
+\section*{More complex specifications}
+Java syntax for boolean expresion plus...
+\begin{lstlisting}
+\result - return value of method
+a ==> - a implies b (if a then b)
+a <==> b - a if and only if b
+\old(x) - value of x before method occurs
+\forall C c; - for all objects c of Class C
+\exists C c; - there exists an object c of Class C
+\end{lstlisting}
+
+\section*{Defensive programming}
+\subsubsection*{Because people are awful}
+Defensive programming is explicitly checking for invalid inputs and bad
+situations, ensuring the software does not behave dangerously regardless of
+input. 
+\\\\
+What if someone calls the method without checking the precondition?
+\\\\
+Particularly when dealing with external input sources or when guarding critical
+resources, it may be better to be defensive outside the wall and use contracts
+inside it.
+
+\section*{The problem with null}
+Lots of programs and progammers have with NullPointerException.
+The root causes (contract progamming) are
+\begin{itemize}
+  \item Null not covered by contract - everyone is confused
+  \item Null is covered - progammre is not paying attention
+  \item Unexpected nulls propagate - hard to track down
+\end{itemize}
+Best practice for API design:
+\begin{itemize}
+  \item Default is that null is NOT a valid argument / result
+  \item Specify when null is allowed / expected / returned and document its
+    meaning.
+\end{itemize}
+Best practice for implementation:
+\begin{itemize}
+  \item Check for null, implicitly or explicity
+  \item Check early
+  \item NullPointerException or IllegalArgumentException
+\end{itemize}
+\begin{example}
+\begin{lstlisting}
+/**
+...
+  * @param name a non-empty string
+*/
+public void setName(String name) {
+  if (name.length() == 0) { // throws NPE if name is null
+    throw new IllegalArgumentException("name empty");
+  }
+}
+\end{lstlisting}
+\end{example}
+
+\section*{Substitution Principle}
+\begin{lstlisting}
+class Parent {
+  ...
+  char f(int x);
+}
+\end{lstlisting}
+Suppose \begin{itemize}
+  \item The precondition (@require) for f is $ x > 0 $
+  \item The postcondition (@ensure) for f is \begin{lstlisting}
+  \result
+  \end{lstlisting}\result > 'A' \&\&
+    \result < 'Z'
+\end{itemize}
+What happens if we override f in a subclass of Parent? Even when
+we change the implementation, we should still follow the contract
+commitments of the original version.
+\\\\
+Suppose \lstinline{Child1 extends Parent}, but \lstinline{Child1.f()} can deal
+with negative numbers as well.
+
+
+
+
+\end{document}
