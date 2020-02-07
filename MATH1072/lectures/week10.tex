@@ -1,0 +1,119 @@
+% Lecture 27 recorded on the 23/09/19 9:00AM
+
+\section{Differentials}
+\subsection{Estimating error}
+If the error in $ x $ is most $ E_1 $ and in $ y $ is at most $ E_2 $ then
+a reasonanle estimate of the worst case error in the linear approximation of
+$ f $ at $ (a,b) $ is 
+$$ |E| \approx  |f_x(a,b)E)_1| + |f_y(a,b)E_2| $$
+
+\begin{center}
+\fbox{\begin{minipage}{7in}
+\begin{example}
+Suppose when making up a barrel ofbase radius 1m and height 2m, you allow an
+error of $5\%$ in radius and height. Estimate the worst case error in volume
+
+\begin{align*}
+  V(r,h) &= \pi r^2 h \;, V(1,2) = 2\pi \\
+  V_r(r,h) &= \2\pi rh ,\; V_r(1,2) = 4\pi \\
+  V_h(r,h) &= \pi r^2 ,\; V_h(1,2) = \pi
+\end{align*}
+$$ E_r = \frac{5}{100}r = \frac{5}{100}, \; |E_h| = \frac{5}{100}\cdot 2 = \frac{10}{100} $$
+\end{example}
+\begin{align*}
+  |E| &= |V_r(1,2) E_r| + |V_h(1,2) E_h|\\
+      &= 4\pi \cdot \frac{5}{100} + \pi \cdot \frac{10}{100} = \frac{30\pi}{100}
+\end{align*}
+Now, since $ V(1,2) = 2\pi $ the percentage error is $ \frac{|E|}{V(1,2)}
+= \frac{30\pi}{100} \cdot \frac{1}{2\pi} = \frac{15}{100} \equiv 15\% $.
+EXACT WORSE CASE SCENARIOS. $ r = 1.05 $, $ h = 2.1 $, $$ \frac{V(1.05,
+21)}{V(1,2)} = 1.1576 $$,
+$ r = 0.95 $, $ h = 1.9 $, $$ \frac{V(0.95, 1.9)}{V(1,2)} = 0.8579... $$
+\end{minipage}}
+\end{center}
+
+\subsection{Quadratic Approximation}
+Let $ Q(x) = f(a) + f'(a)(x-a) + \frac{f''(a)}{2}(x-a)^2$. Then
+\begin{align}
+  Q(a) &= f(a)\\
+  Q'(x) &= f'(a) + f''(a)(x-a)\\
+  Q'(a) &= f'(a)\\
+  Q''(x) &= f''(a)\\
+  Q''(a) &= f''(a)\\
+\end{align}
+Eqs (2.1), (2.3) and (2.6) show that $ f(x) $ and $ Q(x) $ are equal at
+$ x = a $ as are their first and second derivatives.
+\begin{center}
+\fbox{\begin{minipage}{7in}
+\begin{example}
+  Compute $ e^{0.1} $ using a linear and quadratic approximation
+\end{example}
+For $ f(x) = e^x $, we have the quadratic approximation about $ a = 0 $,
+\begin{align*}
+  Q(x) &= f(0) + f'(0)x + \frac{1}{2} f''(0)x^2\\
+       &= 1 + x + \frac{1}{2} x^2
+\end{align*}
+Then $ e^{0.1} = f(0.1) \approx Q(0.1) = 1.105 $
+\end{minipage}}
+\end{center}
+
+\begin{center}
+\fbox{\begin{minipage}{7in}
+\begin{example}
+  In the same graph, sketch $ f(x) = \cos x$ as well as its linear and quadratic
+  approximations around 0. (Obviously can't do sketch real time in \LaTeX but
+  take photo of graph or watch lecture recording at 9:21am (21 mins))
+  Given $ f(x) = \cos x $, $ f'(x) = -\sin x $, $ f''(x) = -\cos x $, $ f(0) = 1 $, $ f'(0) = 0 $, $ f''(0) = -1 $.
+
+  $$ \text{Linear approximation, } L(x) = f(0) + f'(0)x = 1 $$
+  $$ \text{Quadratic approximation, } Q(x) = f(0) + f'(0) + \frac{1}{2} f''(0) x^2 = 1 - \frac{1}{2} x^2$$
+\end{example}
+\end{minipage}}
+\end{center}
+\subsection{Quadratic approximations}
+%The quadratic or second-order approximation to $ f(x,y) $ around $ (a,b) $ is
+%a function of the form
+$$ Q(x,y) = c+ mx + ny + Ax^2 +Bxy +Cy^2 $$
+such that $ Q(a,b) = f(a,b) $ and such that all first order and second order
+partial derivatives of $ f $ and $ Q $ agree at $ (a,b) $. To verify
+\begin{align*}
+  Q(x,y) &= f(a,b) + f_x(a,b)(x-a) + f_y(a,b)(y-b) \\
+	 &+ \frac{1}{2}f_{xx}(a,b) (x-a)^2 + f_{xy} (a,b)(x-a)(y-b)
+	 + \frac{1}{2}f_{yy}(a,b)(y-b)^2
+\end{align*}
+\begin{center}
+\fbox{\begin{minipage}{7in}
+\begin{example}
+  Check that $ Q_{xx} (a,b) = f_{xx}(a,b) $ and $ Q_{xy}(a,b) = f_{xy}(a,b) $
+  \begin{align*}
+    Q_x(x,y) &= f_x(a,b) + f_{xx}(a,b)(x-a) + f_{xy}(a,b)(y-b)\\
+    Q_{xx}(x,y) &= f_{xx}(a,b),  \; Q_{xx}(a,b) = f_{xx}(a,b) \\
+    Q_{xy}(x,y) &= f_{xy}(a,b) ,\; Q_{xy}(a,b) = f_{xy}(a,b)
+  \end{align*}
+\end{example}
+\end{minipage}}
+\end{center}
+A more specific example. Bruh moment.
+\begin{center}
+\fbox{\begin{minipage}{7in}
+\begin{example}
+  Find the quadratic approximation around $ (0,0) $ of 
+  $$ f(x,y) = 1 - x^2 - y^2 + xy  + x^3 + x^2y^2 $$
+\begin{align*}
+  f(x,y) &= 1 - x^2 - y^2 + xy  + x^3 + x^2y^2, \; f(0,0) = 1 \\
+  f_x(x,y) &= -2x + y + 3x^2 + 2xy^2, \; f_x{0,0} = 0\\
+    f_y(x,y) &= 2y + x + 2x^2y, \; f_y(0,0) = 0\\
+    f_{xx} (x,y) &= -2 + 6x + 2y^2, \; f_{xx}(0,0) = -2 \\
+    f_{yy}(x,y) &= 2 + 2x^2, \; f_{yy}(0,0) =2\\
+    f_{xy}(x,y) &= 1+ 4xy, \; f_{xy}(0,0) = 1
+\end{align*}
+The quadratic approximation is
+\begin{align*}
+  Q(x,y) &= f(0,0) + f_x(0,0)x + f_y(0,0)y + \frac{1}{2} f_{xx}(0,0) x^2\\
+  &+ f_{xy}(0,0)xy + \frac{1}{2} f_{yy}(0,0) y^2 \\
+  &= 1 - x^2 + xy = y^2 = f(x,y) - x^3 - x^2y^2
+\end{align*}
+\end{example}
+\end{minipage}}
+\end{center}
+
