@@ -1,5 +1,4 @@
-# MATH1071-LaTeX
-
+# MATH1071 - Advanced Calculus and Linear Algebra I
 Theorems, Definitions, Lemmas and Proofs of the MATH1071 course presented in a neat LaTeX document.
 
 ## Getting Started
