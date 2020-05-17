@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2019/dev/Debian) (preloaded format=pdflatex 2019.10.4)  3 NOV 2019 15:03
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.4.22)  17 MAY 2020 23:22
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -153,20 +153,21 @@ Package graphics Info: Driver file: pdftex.def on input line 99.
 ))
 Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 ) (/usr/share/texlive/texmf-dist/tex/latex/lipsum/lipsum.sty (/usr/share/texlive/texmf-dist/tex/latex/l3kernel/expl3.sty
-Package: expl3 2019-02-15 L3 programming layer (loader) 
+Package: expl3 2019-07-01 L3 programming layer (loader) 
  (/usr/share/texlive/texmf-dist/tex/latex/l3kernel/expl3-code.tex
-Package: expl3 2019-02-15 L3 programming layer (code)
+Package: expl3 2019-07-01 L3 programming layer (code)
 \c_max_int=\count103
 \l_tmpa_int=\count104
 \l_tmpb_int=\count105
 \g_tmpa_int=\count106
 \g_tmpb_int=\count107
 \g__kernel_prg_map_int=\count108
-\c_log_iow=\count109
-\l_iow_line_count_int=\count110
-\l__iow_line_target_int=\count111
-\l__iow_one_indent_int=\count112
-\l__iow_indent_int=\count113
+\c__ior_term_ior=\count109
+\c_log_iow=\count110
+\l_iow_line_count_int=\count111
+\l__iow_line_target_int=\count112
+\l__iow_one_indent_int=\count113
+\l__iow_indent_int=\count114
 \c_zero_dim=\dimen120
 \c_max_dim=\dimen121
 \l_tmpa_dim=\dimen122
@@ -185,78 +186,80 @@ Package: expl3 2019-02-15 L3 programming layer (code)
 \l_tmpb_muskip=\muskip14
 \g_tmpa_muskip=\muskip15
 \g_tmpb_muskip=\muskip16
-\l_keys_choice_int=\count114
-\l__intarray_loop_int=\count115
+\l_keys_choice_int=\count115
+\l__intarray_loop_int=\count116
 \c__intarray_sp_dim=\dimen126
-\g__intarray_font_int=\count116
-\c__fp_leading_shift_int=\count117
-\c__fp_middle_shift_int=\count118
-\c__fp_trailing_shift_int=\count119
-\c__fp_big_leading_shift_int=\count120
-\c__fp_big_middle_shift_int=\count121
-\c__fp_big_trailing_shift_int=\count122
-\c__fp_Bigg_leading_shift_int=\count123
-\c__fp_Bigg_middle_shift_int=\count124
-\c__fp_Bigg_trailing_shift_int=\count125
-\c__kernel_randint_max_int=\count126
-\g__fp_array_int=\count127
-\l__fp_array_loop_int=\count128
-\l__sort_length_int=\count129
-\l__sort_min_int=\count130
-\l__sort_top_int=\count131
-\l__sort_max_int=\count132
-\l__sort_true_max_int=\count133
-\l__sort_block_int=\count134
-\l__sort_begin_int=\count135
-\l__sort_end_int=\count136
-\l__sort_A_int=\count137
-\l__sort_B_int=\count138
-\l__sort_C_int=\count139
-\l__tl_analysis_normal_int=\count140
-\l__tl_analysis_index_int=\count141
-\l__tl_analysis_nesting_int=\count142
-\l__tl_analysis_type_int=\count143
-\l__regex_internal_a_int=\count144
-\l__regex_internal_b_int=\count145
-\l__regex_internal_c_int=\count146
-\l__regex_balance_int=\count147
-\l__regex_group_level_int=\count148
-\l__regex_mode_int=\count149
-\c__regex_cs_in_class_mode_int=\count150
-\c__regex_cs_mode_int=\count151
-\l__regex_catcodes_int=\count152
-\l__regex_default_catcodes_int=\count153
-\c__regex_catcode_D_int=\count154
-\c__regex_catcode_S_int=\count155
-\c__regex_catcode_L_int=\count156
-\c__regex_catcode_O_int=\count157
-\c__regex_catcode_A_int=\count158
-\c__regex_all_catcodes_int=\count159
-\l__regex_show_lines_int=\count160
-\l__regex_min_state_int=\count161
-\l__regex_max_state_int=\count162
-\l__regex_left_state_int=\count163
-\l__regex_right_state_int=\count164
-\l__regex_capturing_group_int=\count165
-\l__regex_min_pos_int=\count166
-\l__regex_max_pos_int=\count167
-\l__regex_curr_pos_int=\count168
-\l__regex_start_pos_int=\count169
-\l__regex_success_pos_int=\count170
-\l__regex_curr_char_int=\count171
-\l__regex_curr_catcode_int=\count172
-\l__regex_last_char_int=\count173
-\l__regex_case_changed_char_int=\count174
-\l__regex_curr_state_int=\count175
-\l__regex_step_int=\count176
-\l__regex_min_active_int=\count177
-\l__regex_max_active_int=\count178
-\l__regex_replacement_csnames_int=\count179
-\l__regex_match_count_int=\count180
-\l__regex_min_submatch_int=\count181
-\l__regex_submatch_int=\count182
-\l__regex_zeroth_submatch_int=\count183
-\g__regex_trace_regex_int=\count184
+\g__intarray_font_int=\count117
+\c__fp_leading_shift_int=\count118
+\c__fp_middle_shift_int=\count119
+\c__fp_trailing_shift_int=\count120
+\c__fp_big_leading_shift_int=\count121
+\c__fp_big_middle_shift_int=\count122
+\c__fp_big_trailing_shift_int=\count123
+\c__fp_Bigg_leading_shift_int=\count124
+\c__fp_Bigg_middle_shift_int=\count125
+\c__fp_Bigg_trailing_shift_int=\count126
+\c__kernel_randint_max_int=\count127
+\g__fp_array_int=\count128
+\l__fp_array_loop_int=\count129
+\l__sort_length_int=\count130
+\l__sort_min_int=\count131
+\l__sort_top_int=\count132
+\l__sort_max_int=\count133
+\l__sort_true_max_int=\count134
+\l__sort_block_int=\count135
+\l__sort_begin_int=\count136
+\l__sort_end_int=\count137
+\l__sort_A_int=\count138
+\l__sort_B_int=\count139
+\l__sort_C_int=\count140
+\l__str_internal_int=\count141
+\c__str_replacement_char_int=\count142
+\l__tl_analysis_normal_int=\count143
+\l__tl_analysis_index_int=\count144
+\l__tl_analysis_nesting_int=\count145
+\l__tl_analysis_type_int=\count146
+\l__regex_internal_a_int=\count147
+\l__regex_internal_b_int=\count148
+\l__regex_internal_c_int=\count149
+\l__regex_balance_int=\count150
+\l__regex_group_level_int=\count151
+\l__regex_mode_int=\count152
+\c__regex_cs_in_class_mode_int=\count153
+\c__regex_cs_mode_int=\count154
+\l__regex_catcodes_int=\count155
+\l__regex_default_catcodes_int=\count156
+\c__regex_catcode_D_int=\count157
+\c__regex_catcode_S_int=\count158
+\c__regex_catcode_L_int=\count159
+\c__regex_catcode_O_int=\count160
+\c__regex_catcode_A_int=\count161
+\c__regex_all_catcodes_int=\count162
+\l__regex_show_lines_int=\count163
+\l__regex_min_state_int=\count164
+\l__regex_max_state_int=\count165
+\l__regex_left_state_int=\count166
+\l__regex_right_state_int=\count167
+\l__regex_capturing_group_int=\count168
+\l__regex_min_pos_int=\count169
+\l__regex_max_pos_int=\count170
+\l__regex_curr_pos_int=\count171
+\l__regex_start_pos_int=\count172
+\l__regex_success_pos_int=\count173
+\l__regex_curr_char_int=\count174
+\l__regex_curr_catcode_int=\count175
+\l__regex_last_char_int=\count176
+\l__regex_case_changed_char_int=\count177
+\l__regex_curr_state_int=\count178
+\l__regex_step_int=\count179
+\l__regex_min_active_int=\count180
+\l__regex_max_active_int=\count181
+\l__regex_replacement_csnames_int=\count182
+\l__regex_match_count_int=\count183
+\l__regex_min_submatch_int=\count184
+\l__regex_submatch_int=\count185
+\l__regex_zeroth_submatch_int=\count186
+\g__regex_trace_regex_int=\count187
 \c_empty_box=\box29
 \l_tmpa_box=\box30
 \l_tmpb_box=\box31
@@ -286,61 +289,61 @@ Package: expl3 2019-02-15 L3 programming layer (code)
 \l_tmpb_coffin=\box40
 \g_tmpa_coffin=\box41
 \g_tmpb_coffin=\box42
+\l__coffin_bounding_shift_dim=\dimen142
+\l__coffin_left_corner_dim=\dimen143
+\l__coffin_right_corner_dim=\dimen144
+\l__coffin_bottom_corner_dim=\dimen145
+\l__coffin_top_corner_dim=\dimen146
+\l__coffin_scaled_total_height_dim=\dimen147
+\l__coffin_scaled_width_dim=\dimen148
 \c__coffin_empty_coffin=\box43
 \l__coffin_display_coffin=\box44
 \l__coffin_display_coord_coffin=\box45
 \l__coffin_display_pole_coffin=\box46
-\l__coffin_display_offset_dim=\dimen142
-\l__coffin_display_x_dim=\dimen143
-\l__coffin_display_y_dim=\dimen144
+\l__coffin_display_offset_dim=\dimen149
+\l__coffin_display_x_dim=\dimen150
+\l__coffin_display_y_dim=\dimen151
 \g__file_internal_ior=\read1
-\l__coffin_bounding_shift_dim=\dimen145
-\l__coffin_left_corner_dim=\dimen146
-\l__coffin_right_corner_dim=\dimen147
-\l__coffin_bottom_corner_dim=\dimen148
-\l__coffin_top_corner_dim=\dimen149
-\l__coffin_scaled_total_height_dim=\dimen150
-\l__coffin_scaled_width_dim=\dimen151
-\l__seq_internal_a_int=\count185
-\l__seq_internal_b_int=\count186
-) (/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3pdfmode.def
-File: l3pdfmode.def 2019-02-15 v L3 Experimental driver: PDF mode
-\l__driver_color_stack_int=\count187
+\l__seq_internal_a_int=\count188
+\l__seq_internal_b_int=\count189
+\c__deprecation_minus_one=\count190
+) (/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
+File: l3backend-pdfmode.def 2019-04-06 v L3 Experimental backend support: PDF mode
+\l__kernel_color_stack_int=\count191
+\l__pdf_internal_box=\box47
 )) (/usr/share/texlive/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
-Package: xparse 2018-10-17 L3 Experimental document command parser
-\l__xparse_current_arg_int=\count188
-\g__xparse_grabber_int=\count189
-\l__xparse_m_args_int=\count190
-\l__xparse_mandatory_args_int=\count191
-\l__xparse_v_nesting_int=\count192
+Package: xparse 2019-05-28 L3 Experimental document command parser
+\l__xparse_current_arg_int=\count192
+\g__xparse_grabber_int=\count193
+\l__xparse_m_args_int=\count194
+\l__xparse_v_nesting_int=\count195
 )
 Package: lipsum 2019/01/02 v2.2 150 paragraphs of Lorem Ipsum dummy text
  (/usr/share/texlive/texmf-dist/tex/latex/lipsum/lipsum.ltd.tex
 File: lipsum.ltd.tex 2019/01/02 v2.2 The Lorem ipsum dummy text
 )) (/usr/share/texlive/texmf-dist/tex/latex/tools/multicol.sty
 Package: multicol 2018/12/27 v1.8v multicolumn formatting (FMi)
-\c@tracingmulticols=\count193
-\mult@box=\box47
+\c@tracingmulticols=\count196
+\mult@box=\box48
 \multicol@leftmargin=\dimen152
-\c@unbalance=\count194
-\c@collectmore=\count195
-\doublecol@number=\count196
-\multicoltolerance=\count197
-\multicolpretolerance=\count198
+\c@unbalance=\count197
+\c@collectmore=\count198
+\doublecol@number=\count199
+\multicoltolerance=\count266
+\multicolpretolerance=\count267
 \full@width=\dimen153
 \page@free=\dimen154
 \premulticols=\dimen155
 \postmulticols=\dimen156
 \multicolsep=\skip55
 \multicolbaselineskip=\skip56
-\partial@page=\box48
-\last@line=\box49
+\partial@page=\box49
+\last@line=\box50
 \maxbalancingoverflow=\dimen157
-\mult@rightbox=\box50
-\mult@grightbox=\box51
-\mult@gfirstbox=\box52
-\mult@firstbox=\box53
-\@tempa=\box54
+\mult@rightbox=\box51
+\mult@grightbox=\box52
+\mult@gfirstbox=\box53
+\mult@firstbox=\box54
 \@tempa=\box55
 \@tempa=\box56
 \@tempa=\box57
@@ -357,36 +360,36 @@ Package: multicol 2018/12/27 v1.8v multicolumn formatting (FMi)
 \@tempa=\box68
 \@tempa=\box69
 \@tempa=\box70
-\c@columnbadness=\count199
-\c@finalcolumnbadness=\count266
+\@tempa=\box71
+\c@columnbadness=\count268
+\c@finalcolumnbadness=\count269
 \last@try=\dimen158
 \multicolovershoot=\dimen159
 \multicolundershoot=\dimen160
-\mult@nat@firstbox=\box71
-\colbreak@box=\box72
-\mc@col@check@num=\count267
+\mult@nat@firstbox=\box72
+\colbreak@box=\box73
+\mc@col@check@num=\count270
 )
-\GPT@outputbox=\box73
-\c@theorem=\count268
-\c@lemma=\count269
-\c@remark=\count270
-\c@definition=\count271
-\c@example=\count272
+\c@theorem=\count271
+\c@lemma=\count272
+\c@remark=\count273
+\c@definition=\count274
+\c@example=\count275
  (./1072summary.aux)
 \openout1 = `1072summary.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -424,16 +427,16 @@ LaTeX Font Info:    ... okay on input line 25.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count273
+\scratchcounter=\count276
 \scratchdimen=\dimen161
 \scratchbox=\box74
-\nofMPsegments=\count274
-\nofMParguments=\count275
+\nofMPsegments=\count277
+\nofMParguments=\count278
 \everyMPshowfont=\toks27
-\MPscratchCnt=\count276
+\MPscratchCnt=\count279
 \MPscratchDim=\dimen162
-\MPnumerator=\count277
-\makeMPintoPDFobject=\count278
+\MPnumerator=\count280
+\makeMPintoPDFobject=\count281
 \everyMPtoPDFconversion=\toks28
 ) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
@@ -468,21 +471,21 @@ Package grfext Info: Graphics extension search list:
  (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 35.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 32.
  (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 35.
-LaTeX Font Info:    Try loading font information for U+msa on input line 35.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 32.
+LaTeX Font Info:    Try loading font information for U+msa on input line 32.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 35.
+LaTeX Font Info:    Try loading font information for U+msb on input line 32.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-Underfull \hbox (badness 10000) in paragraph at lines 54--58
+Underfull \hbox (badness 10000) in paragraph at lines 51--55
 
  []
 
@@ -490,41 +493,41 @@ Underfull \hbox (badness 10000) in paragraph at lines 54--58
 
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2]
-Overfull \hbox (0.9211pt too wide) detected at line 164
+Overfull \hbox (0.9211pt too wide) detected at line 161
 [] []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 164--167
+Underfull \hbox (badness 10000) in paragraph at lines 161--164
 
  []
 
 
-Underfull \hbox (badness 7869) in paragraph at lines 229--233
+Underfull \hbox (badness 7869) in paragraph at lines 226--230
 \OT1/cmr/m/n/10 You can ex-trap-o-late this to as many di-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 229--233
+Underfull \hbox (badness 10000) in paragraph at lines 226--230
 \OT1/cmr/m/n/10 men-sions as you want, Given a func-tion
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 282--289
+Underfull \hbox (badness 10000) in paragraph at lines 279--286
 
  []
 
 [3] [4] (./1072summary.aux) ) 
 Here is how much of TeX's memory you used:
- 13055 strings out of 492615
- 236374 string characters out of 6131390
- 452663 words of memory out of 5000000
- 16888 multiletter control sequences out of 15000+600000
+ 13641 strings out of 492609
+ 249671 string characters out of 6131462
+ 462424 words of memory out of 5000000
+ 17481 multiletter control sequences out of 15000+600000
  537767 words of font info for 45 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,12n,63p,278b,369s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 41i,12n,63p,278b,367s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on 1072summary.pdf (4 pages, 149820 bytes).
+Output written on 1072summary.pdf (4 pages, 150215 bytes).
 PDF statistics:
  65 PDF objects out of 1000 (max. 8388607)
  46 compressed objects within 1 object stream
